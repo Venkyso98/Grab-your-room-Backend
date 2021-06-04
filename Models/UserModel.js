@@ -12,15 +12,15 @@ const userModel = mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
   },
-  // checkIn: {
-  //   type: Date,
-  //   default: Date.now(),
-  // },
-  // checkOut: {
-  //   type: Date,
-  // },
+  checkIn: {
+    type: Date,
+    // default: Date.now(),
+  },
+  checkOut: {
+    type: Date,
+  },
 });
 
-module.exports = mongoose.model("User",userModel);
+module.exports = mongoose.model("User", userModel);
