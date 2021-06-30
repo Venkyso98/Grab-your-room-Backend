@@ -90,7 +90,7 @@ exports.getRoomById = async (request, response) => {
   }
 };
 
-// update room
+// update room 
 exports.updateRoom = async (request, response) => {
   const roomId = request.params.id;
   const checkIn = request.body.checkIn;
